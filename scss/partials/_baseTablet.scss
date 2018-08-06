@@ -1,0 +1,11 @@
+@media(#{$tablet}) {
+    .main-width {
+        width: 95%;
+        margin: $center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

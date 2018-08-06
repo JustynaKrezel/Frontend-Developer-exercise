@@ -1,0 +1,382 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: $base-color;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.main-width {
+    width: 60%;
+    margin: $center;
+    outline: none;
+}
+
+// Header
+
+.text_line {
+    display: inline-block;
+    width: 60%;
+}
+
+.about {
+    font-size: 42px;
+    width: 18%;
+    float: left;
+}
+
+.line_type_one {
+    background-color: #348DB2;
+    height: 3px;
+    width: 105px;
+    float: left;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 55px;
+    clear: both;
+}
+
+// Social section
+
+.first_column {
+    float: left;
+    width: 1%;
+    clear: both;
+    
+}
+
+
+.line_type_two_first {
+    background-color: grey;
+    height: 105px;
+    width: 1px;
+    float: left;
+}
+
+.fb {
+    height: 1.8em;
+    float: left;
+    margin-top: 15px;
+    margin-left: -5px;
+}
+
+.twitter {
+    height: 1em;
+    float: left;
+    margin-top: 15px;
+    margin-left: -5px;
+}
+
+.insta {
+    height: 1em;
+    float: left;
+    margin-top: 15px;
+    margin-left: -5px;
+}
+
+.line_type_two_second {
+    background-color: grey;
+    height: 105px;
+    width: 1px;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    clear: both;
+}
+
+// Content section
+
+//.basic_content {
+//    position: relative;
+//}
+
+
+p {
+    margin: 0 auto;
+}
+
+.lid_one {
+    font-weight: 600;
+    line-height: 1.5em;
+    float: left;
+    margin-left: 1.5em;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.lid_two {
+    margin-left: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+    line-height: 20px;
+    text-align: justify;
+}
+
+//.parent_next_to {
+//    position: relative;
+//}
+
+.next_to_content {
+//    position: absolute;
+    width: 12em;
+    float: right;
+    margin-top: -100px;
+    margin-right: 0px;
+}
+
+.norway {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.line_type_three {
+    background-color: #348DB2;
+    height: 2px;
+    width: 45px;
+    float: left;
+    margin-bottom: 15px;
+    
+}
+
+.text_norway {
+    margin-top: 15px;
+}
+
+.next_to_section {
+    float: right;
+    margin-top: 0px;
+    margin-right: 170px;
+    width: 125px;
+    display: inline-block;
+    lline-height: 20px;
+}
+
+.picture_one {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.one_line {
+    display: inline-block;
+}
+
+.triangle {
+    width: 10px;
+}
+
+
+//Footer part
+
+.background_form {
+    position: relative;
+    clear: both;
+//    background-image: url("images/booking_bg.png");
+}
+
+.background_form img {
+    width: 100%;
+//    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.headline_footer {
+    position: absolute;
+    width: 340px;
+    height: 50px;
+    top: 40px;
+    left: 340px;
+}
+
+.booking {
+    position: absolute;
+    font-size: 42px;
+    width: 18%;
+    color: white;
+}
+
+.line_type_four {
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 105px;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+.bottom_section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    
+}
+
+
+.calendar {
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .9);
+    height: 450px;
+	width: 450px;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.73;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+/* Front - Calendar */
+
+.current-date {
+	display: flex;
+	justify-content: center;
+	padding: 0px 0px 0px 0px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+.current-date h1 {
+	color: #dfebed;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.week-days {
+	color: #dfebed;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+	padding: 20px 48px 15px 48px;
+    list-style-type: none;
+}
+
+.days {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.weeks {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 0 40px;
+}
+
+.weeks div {
+	display: flex;
+	font-size: 1.2em;
+	font-weight: 300;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.last-month {
+	opacity: .3;
+}
+
+.weeks span {
+	padding: 10px;
+}
+
+.weeks span.active {
+	background: #348DB2;
+	border-radius: 50%;
+}
+
+.weeks span:not(.last-month):hover {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.event {
+	position: relative;
+}
+
+.event:after {
+	content: '•';
+	color: #348DB2;
+	font-size: 1.4em;
+	position: absolute;
+	right: -2px;
+	top: -2px;
+}
+
+#msform {
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    margin-left: 35px;
+    margin-top: 200px; 
+    background-color: white;
+    
+}
+
+fieldset {
+    border: none;
+}
+
+.email {
+    width: 400px;
+    height: 70px;
+    align-items: center;
+    background-color: #E1F1E8;
+    border-radius: 50px;
+    opacity: 50%;
+    margin-top: 50px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 0px;
+}
+
+.city {
+    width: 400px;
+    height: 70px;
+    background-color: #E1F1E8;
+    border-radius: 50px;
+    opacity: 50%;
+    margin-top: 15px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 0px;
+}
+
+.hotel {
+    width: 400px;
+    height: 70px;
+    background-color: #E1F1E8;
+    border-radius: 50px;
+    opacity: 50%;
+    margin-top: 15px;
+    margin-left: 13px;
+    margin-bottom: 5px;
+    padding: 15px;
+    border: 0px;
+}
+
+.action-button {
+    width: 400px;
+    height: 55px;
+    background-color: #348DB2;
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-left: 13px;
+    box-shadow: 5px 10px 15px 1px grey;
+    border: 0px;
+}
+
+a {
+  text-decoration: none;
+}
